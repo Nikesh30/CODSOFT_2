@@ -1,0 +1,361 @@
+/* 
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,600&family=Roboto+Condensed:ital,wght@1,300&display=swap');
+
+:root{
+  --primary-color: #0b0c10;
+  --primary-color-light: #1f2833;
+  --secondary-color: #66fcf1;
+  --text-color:black;
+  --max-width: 1200px;
+  --tertiary-color: #c5c6c7;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--primary-color-light);
+}
+
+nav{
+    width:100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--primary-color-light);
+    z-index: 99;
+}
+
+.nav_contents{
+max-width: var(--max-width);
+margin: auto;
+padding: 1.5rem 1rem;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+nav .logo a{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color:  var(--secondary-color);
+    transition: 0.3s;
+}
+
+nav .logo a:hover{
+    color:aqua;
+}
+
+nav .checkbox{
+    display: none;
+}
+
+nav input{
+    display: none;
+}
+
+nav.checkbox{
+    font-size: 2rem;
+    color: var(--secondary-color);
+    cursor: pointer;
+}
+
+nav .class a{
+    font-size: 2rem;
+    color: var(--secondary-color);
+}
+
+ul{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    list-style: none;
+    transition: left 0.3s;
+}
+
+ul li a{
+    padding: 0.5rem 1rem;
+    border: 2px solid transparent;
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    transition: 0.3s;
+    border-radius: 12px;
+}
+
+ul li a:hover{
+    border-top-color: var(--primary-color-light) ;
+    border-bottom-color: var(--primary-color);
+    color: var(--primary-color-light)
+}
+
+.section_container{
+    min-height: 100vh;
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.subtitle{
+    letter-spacing: 2px;
+    color:var(--tertiary-color);
+    font-weight: 600;
+    margin-bottom: .5rem;
+}
+
+.title{
+    font-size: 2.5rem;
+    font-weight: 400;
+    line-height: 3rem;
+    color:var(--secondary-color);
+    margin-bottom: 1rem;
+}
+
+.title span{
+    font-weight: 600;
+
+}
+
+.description{
+    line-height: 1.5rem;
+    color:var(--tertiary-color);
+    margin-bottom: 2rem;
+}
+
+.action_bts{
+    display: flex;
+    gap: 1rem;
+}
+
+.action_bts button{
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    padding: 1rem 2rem;
+    outline: none;
+    border: 2px solid var(--secondary-color);
+    border-radius: 12px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.hire_me{
+    background-color: var(--secondary-color);
+    color: var(aliceblue);
+}
+
+.portfolio{
+    background-color: var(--secondary-color);
+    color: var(aliceblue);
+}
+
+.image{
+    margin: auto;
+    width: 200%;
+   border-radius: 100%;
+    overflow: hidden;
+}
+
+#about{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 20px;
+    margin-bottom: 50px;
+    color: var(--secondary-color);
+}
+
+.intro{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    padding: 10px;
+}
+
+.intro h2{
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.projects{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.head{
+    font-family: century;
+    font-size: 3rem;
+    text-align: center;
+    margin: 40px 0px;
+    color: var(--secondary-color);
+}
+
+.row{
+    display: flex;
+    justify-content: space-around;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 450px;
+    border: 1px solid black;
+    color: whitesmoke;
+    margin: 10px;
+    align-items: center;
+    text-align: justify;
+    padding: 10px;
+    border-radius: 10px;
+    background: url(project_1.jpeg);
+    background-size: 100% 200%;
+    transition: all .8s;
+}
+
+.box2{
+    background: url(project_2.jpeg);
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 450px;
+    border: 1px solid black;
+    color: whitesmoke;
+    margin: 10px;
+    align-items: center;
+    text-align: justify;
+    padding: 10px;
+    border-radius: 10px;
+    background-size: 100% 200%;
+    transition: all .8s;
+}
+
+.box3{
+    background: url(project_3.jpeg);
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 450px;
+    border: 1px solid black;
+    color: whitesmoke;
+    margin: 10px;
+    align-items: center;
+    text-align: justify;
+    padding: 10px;
+    border-radius: 10px;
+    background-size: 100% 200%;
+    transition: all .8s;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    padding: 20px;
+}
+ 
+.form{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    align-items: center;
+    margin: 20px 0px;
+}
+
+.input{
+    padding: 12px;
+    margin: 15px;
+    width: 30%;
+    border: none;
+    outline: none;
+}
+
+#msg{
+    width: 20%;
+    padding: 10px;
+    margin: 15px;
+    border:none;
+    outline: none;
+}
+
+#send{
+    width:20%;
+    padding: 10px;
+    margin: 40px;
+    border: none;
+    outline: none;
+}
+
+#send:hover{
+    cursor: pointer;
+    box-shadow: 0 0 10px white;
+}
+
+.contact .input{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1rem;
+    box-sizing: content-box;
+    
+}
+
+@media(width < 750px){
+    nav.checkbox{
+        display: block;
+    }
+
+ul{
+    position: absolute;
+    width: 100%;
+    height: calc(100v - 5px);
+    left: 100%;
+    top: 85px;
+    background-color: var(--tertiary-color);
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+
+nav #checkbox:checked ~ ul{
+    left: 0;
+}
+
+ul li a{
+    font-size: 1.25rem;
+}
+
+.section_container{
+    padding: 10rem 1rem 5rem 1rem;
+    text-align: center;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.action_btns{
+    margin: auto;
+}
+
+
+}
